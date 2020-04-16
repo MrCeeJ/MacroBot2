@@ -249,7 +249,7 @@ public class BuildUtils extends CeejBotComponent {
             agent.actions().unitCommand(worker.unit(), getAbilityToMakeUnit(unit), getRandomLocationNearLocationForStructure(unit, location), false);
             return true;
         }
-        log.warn("Warning, unable to build building :" + unit);
+        log.warn("Warning, unable to build building :" + unit + " built by :"+worker + " at location :"+location);
         return false;
     }
 

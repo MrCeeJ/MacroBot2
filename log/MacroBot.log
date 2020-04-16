@@ -1,244 +1,281 @@
-19:18:42,909 [main] INFO  ControlInterfaceImpl:159 - Waiting for connection...
-19:18:42,927 [main] INFO  S2Controller:210 - Launching Starcraft II with configuration: Config(SimpleConfigObject({"file":{"encoding":"UTF-8","separator":"\\"},"java":{"class":{"path":"D:\\Code\\SC2AI\\MacroBot2\\out\\production\\MacroBot2;C:\\Users\\ucjuk\\.m2\\repository\\com\\github\\ocraft\\ocraft-s2client-api\\0.3.13\\ocraft-s2client-api-0.3.13.jar;C:\\Users\\ucjuk\\.m2\\repository\\com\\github\\ocraft\\ocraft-s2client-protocol\\0.3.13\\ocraft-s2client-protocol-0.3.13.jar;C:\\Users\\ucjuk\\.m2\\repository\\com\\google\\protobuf\\protobuf-java\\3.7.1\\protobuf-java-3.7.1.jar;C:\\Users\\ucjuk\\.m2\\repository\\com\\fasterxml\\jackson\\core\\jackson-databind\\2.9.7\\jackson-databind-2.9.7.jar;C:\\Users\\ucjuk\\.m2\\repository\\com\\fasterxml\\jackson\\core\\jackson-core\\2.9.7\\jackson-core-2.9.7.jar;C:\\Users\\ucjuk\\.m2\\repository\\com\\fasterxml\\jackson\\datatype\\jackson-datatype-jdk8\\2.9.7\\jackson-datatype-jdk8-2.9.7.jar;C:\\Users\\ucjuk\\.m2\\repository\\com\\fasterxml\\jackson\\core\\jackson-annotations\\2.9.7\\jackson-annotations-2.9.7.jar;C:\\Users\\ucjuk\\.m2\\repository\\io\\vertx\\vertx-web-client\\3.7.0\\vertx-web-client-3.7.0.jar;C:\\Users\\ucjuk\\.m2\\repository\\io\\vertx\\vertx-web-common\\3.7.0\\vertx-web-common-3.7.0.jar;C:\\Users\\ucjuk\\.m2\\repository\\io\\vertx\\vertx-core\\3.7.0\\vertx-core-3.7.0.jar;C:\\Users\\ucjuk\\.m2\\repository\\io\\netty\\netty-common\\4.1.30.Final\\netty-common-4.1.30.Final.jar;C:\\Users\\ucjuk\\.m2\\repository\\io\\netty\\netty-buffer\\4.1.30.Final\\netty-buffer-4.1.30.Final.jar;C:\\Users\\ucjuk\\.m2\\repository\\io\\netty\\netty-transport\\4.1.30.Final\\netty-transport-4.1.30.Final.jar;C:\\Users\\ucjuk\\.m2\\repository\\io\\netty\\netty-handler\\4.1.30.Final\\netty-handler-4.1.30.Final.jar;C:\\Users\\ucjuk\\.m2\\repository\\io\\netty\\netty-codec\\4.1.30.Final\\netty-codec-4.1.30.Final.jar;C:\\Users\\ucjuk\\.m2\\repository\\io\\netty\\netty-handler-proxy\\4.1.30.Final\\netty-handler-proxy-4.1.30.Final.jar;C:\\Users\\ucjuk\\.m2\\repository\\io\\netty\\netty-codec-socks\\4.1.30.Final\\netty-codec-socks-4.1.30.Final.jar;C:\\Users\\ucjuk\\.m2\\repository\\io\\netty\\netty-codec-http\\4.1.30.Final\\netty-codec-http-4.1.30.Final.jar;C:\\Users\\ucjuk\\.m2\\repository\\io\\netty\\netty-codec-http2\\4.1.30.Final\\netty-codec-http2-4.1.30.Final.jar;C:\\Users\\ucjuk\\.m2\\repository\\io\\netty\\netty-resolver\\4.1.30.Final\\netty-resolver-4.1.30.Final.jar;C:\\Users\\ucjuk\\.m2\\repository\\io\\netty\\netty-resolver-dns\\4.1.30.Final\\netty-resolver-dns-4.1.30.Final.jar;C:\\Users\\ucjuk\\.m2\\repository\\io\\netty\\netty-codec-dns\\4.1.30.Final\\netty-codec-dns-4.1.30.Final.jar;C:\\Users\\ucjuk\\.m2\\repository\\io\\vertx\\vertx-rx-java2\\3.7.0\\vertx-rx-java2-3.7.0.jar;C:\\Users\\ucjuk\\.m2\\repository\\io\\reactivex\\rxjava2\\rxjava\\2.2.4\\rxjava-2.2.4.jar;C:\\Users\\ucjuk\\.m2\\repository\\org\\reactivestreams\\reactive-streams\\1.0.2\\reactive-streams-1.0.2.jar;C:\\Users\\ucjuk\\.m2\\repository\\io\\vertx\\vertx-rx-gen\\3.7.0\\vertx-rx-gen-3.7.0.jar;C:\\Users\\ucjuk\\.m2\\repository\\io\\vertx\\vertx-codegen\\3.7.0\\vertx-codegen-3.7.0.jar;C:\\Users\\ucjuk\\.m2\\repository\\org\\mvel\\mvel2\\2.3.1.Final\\mvel2-2.3.1.Final.jar;C:\\Users\\ucjuk\\.m2\\repository\\org\\javassist\\javassist\\3.23.1-GA\\javassist-3.23.1-GA.jar;C:\\Users\\ucjuk\\.m2\\repository\\org\\slf4j\\slf4j-api\\1.7.25\\slf4j-api-1.7.25.jar;C:\\Users\\ucjuk\\.m2\\repository\\org\\apache\\logging\\log4j\\log4j-slf4j-impl\\2.11.1\\log4j-slf4j-impl-2.11.1.jar;C:\\Users\\ucjuk\\.m2\\repository\\org\\apache\\logging\\log4j\\log4j-api\\2.11.1\\log4j-api-2.11.1.jar;C:\\Users\\ucjuk\\.m2\\repository\\org\\apache\\logging\\log4j\\log4j-core\\2.11.1\\log4j-core-2.11.1.jar;C:\\Users\\ucjuk\\.m2\\repository\\com\\typesafe\\config\\1.3.3\\config-1.3.3.jar;C:\\Users\\ucjuk\\.m2\\repository\\org\\projectlombok\\lombok\\1.18.12\\lombok-1.18.12.jar;C:\\Users\\ucjuk\\.m2\\repository\\com\\github\\ocraft\\ocraft-s2client-bot\\0.3.13\\ocraft-s2client-bot-0.3.13.jar;C:\\Users\\ucjuk\\.m2\\repository\\info\\picocli\\picocli\\3.7.0\\picocli-3.7.0.jar","version":"57.0"},"home":"C:\\Program Files\\Java\\jdk-13.0.1","io":{"tmpdir":"C:\\Users\\ucjuk\\AppData\\Local\\Temp\\"},"library":{"path":"C:\\Program Files\\Java\\jdk-13.0.1\\bin;C:\\WINDOWS\\Sun\\Java\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\Program Files (x86)\\Razer\\ChromaBroadcast\\bin;C:\\Program Files\\Razer\\ChromaBroadcast\\bin;C:\\Program Files (x86)\\Razer Chroma SDK\\bin;C:\\Program Files\\Razer Chroma SDK\\bin;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NGX;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files (x86)\\get_iplayer;D:\\Code\\lib\\gradle-6.0.1\\bin;D:\\Code\\lib\\Git\\cmd;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Users\\ucjuk\\AppData\\Local\\Microsoft\\WindowsApps;;D:\\Code\\IntelliJ IDEA Community Edition 2020.1\\bin;;."},"runtime":{"name":"Java(TM) SE Runtime Environment","version":"13.0.1+9"},"specification":{"name":"Java Platform API Specification","vendor":"Oracle Corporation","version":"13"},"vendor":{"url":{"bug":"https://bugreport.java.com/bugreport/"}},"version":{"date":"2019-10-15"},"vm":{"compressedOopsMode":"Zero based","info":"mixed mode, sharing","name":"Java HotSpot(TM) 64-Bit Server VM","specification":{"name":"Java Virtual Machine Specification","vendor":"Oracle Corporation","version":"13"},"vendor":"Oracle Corporation","version":"13.0.1+9"}},"jdk":{"debug":"release"},"line":{"separator":"\r\n"},"ocraft":{"bot":{"map":null,"multithreaded":false,"realtime":false,"replayRecovery":true,"stepSize":1,"traced":false},"client":{"buffer":{"size":{"request":{"eventBus":8192,"queue":8192},"response":{"backpressure":8192,"eventBus":524288,"stream":8192}}},"net":{"connectTimeoutInMillis":60000,"ip":"127.0.0.1","maxWebSocketFrameSizeInBytes":20971520,"port":5000,"retry":20,"synchronousRequestTimeoutInMillis":60000},"traced":false},"game":{"cli":{"dataDir":null,"eglpath":null,"needsSupportDir":true,"osmesapath":null,"tempDir":null,"verbose":null},"executable":{"baseBuild":"Base78285","dataVersion":null,"exeFileName":"SC2_x64.exe","is64Bit":true,"path":"D:\\Games\\StarCraft II\\Versions\\Base78285\\SC2_x64.exe","root":"D:\\Games\\StarCraft II"},"net":{"ip":"127.0.0.1","port":5000,"retry":10,"timeoutInMillis":2000},"window":{"height":768,"mode":0,"width":1024,"x":0,"y":0}}},"os":{"arch":"amd64","name":"Windows 10","version":"10.0"},"path":{"separator":";"},"sun":{"arch":{"data":{"model":"64"}},"boot":{"library":{"path":"C:\\Program Files\\Java\\jdk-13.0.1\\bin"}},"cpu":{"endian":"little","isalist":"amd64"},"io":{"unicode":{"encoding":"UnicodeLittle"}},"java":{"command":"com.mrceej.sc2.BotClient","launcher":"SUN_STANDARD"},"jnu":{"encoding":"Cp1252"},"management":{"compiler":"HotSpot 64-Bit Tiered Compilers"},"os":{"patch":{"level":""}}},"user":{"country":"GB","dir":"D:\\Code\\SC2AI\\MacroBot2","home":"C:\\Users\\ucjuk","language":"en","name":"ucjuk","script":"","timezone":"Europe/London","variant":""}})).
-19:18:42,939 [main] INFO  S2Controller:242 - Launched SC2 (D:\Games\StarCraft II\Versions\Base78285\SC2_x64.exe), PID: 15700
-19:18:49,125 [main] INFO  S2Client:160 - Starting: S2Client{connectToIp='127.0.0.1', connectToPort=5000, requestTimeoutInMillis=60000, connectTimeoutInMillis=60000, done=false, traced=false}
-19:18:49,887 [vert.x-eventloop-thread-0] INFO  OnConnect:71 - Connected.
-19:18:49,959 [vert.x-eventloop-thread-0] WARN  Ping:84 - Ocraft uses sc2api in version 4.10.3.76114. The game server uses 4.11.4.78285.
-19:18:50,234 [main] INFO  ControlInterfaceImpl:178 - Connected to 127.0.0.1:5000
-19:18:50,763 [main] INFO  ControlInterfaceImpl:338 - Waiting for the JoinGame response.
-19:19:00,263 [main] INFO  ControlInterfaceImpl:357 - WaitJoinGame finished successfully.
-19:19:01,020 [main] INFO  Data:116 - Unit created :ZERG_HATCHERY tag:{"Tag":4335861761}
-19:19:01,026 [main] INFO  Data:116 - Unit created :ZERG_LARVA tag:{"Tag":4336123905}
-19:19:01,026 [main] INFO  Data:116 - Unit created :ZERG_LARVA tag:{"Tag":4336386049}
-19:19:01,027 [main] INFO  Data:116 - Unit created :ZERG_LARVA tag:{"Tag":4336648193}
-19:19:01,027 [main] INFO  Data:116 - Unit created :ZERG_DRONE tag:{"Tag":4336910337}
-19:19:01,027 [main] INFO  Data:116 - Unit created :ZERG_DRONE tag:{"Tag":4337172481}
-19:19:01,027 [main] INFO  Data:116 - Unit created :ZERG_DRONE tag:{"Tag":4337434625}
-19:19:01,028 [main] INFO  Data:116 - Unit created :ZERG_DRONE tag:{"Tag":4337696769}
-19:19:01,028 [main] INFO  Data:116 - Unit created :ZERG_DRONE tag:{"Tag":4337958913}
-19:19:01,028 [main] INFO  Data:116 - Unit created :ZERG_DRONE tag:{"Tag":4338221057}
-19:19:01,028 [main] INFO  Data:116 - Unit created :ZERG_DRONE tag:{"Tag":4338483201}
-19:19:01,028 [main] INFO  Data:116 - Unit created :ZERG_DRONE tag:{"Tag":4338745345}
-19:19:01,028 [main] INFO  Data:116 - Unit created :ZERG_DRONE tag:{"Tag":4339007489}
-19:19:01,029 [main] INFO  Data:116 - Unit created :ZERG_DRONE tag:{"Tag":4339269633}
-19:19:01,029 [main] INFO  Data:116 - Unit created :ZERG_DRONE tag:{"Tag":4339531777}
-19:19:01,030 [main] INFO  Data:116 - Unit created :ZERG_DRONE tag:{"Tag":4339793921}
-19:19:01,030 [main] INFO  Data:116 - Unit created :ZERG_OVERLORD tag:{"Tag":4340056065}
-19:19:01,035 [main] INFO  Production:156 - Switching to new build :DEFAULT
-19:19:03,002 [main] INFO  Production:107 - Queing request for a :ZERG_OVERLORD
-19:19:04,068 [main] INFO  Production:81 - Queuing default unit:ZERG_DRONE
-19:19:04,069 [main] INFO  Production:107 - Queing request for a :ZERG_DRONE
-19:19:05,075 [main] INFO  Production:81 - Queuing default unit:ZERG_DRONE
-19:19:05,075 [main] INFO  Production:107 - Queing request for a :ZERG_DRONE
-19:19:05,317 [main] INFO  Data:116 - Unit created :ZERG_LARVA tag:{"Tag":4340842498}
-19:19:05,933 [main] INFO  Production:81 - Queuing default unit:ZERG_DRONE
-19:19:05,933 [main] INFO  Production:107 - Queing request for a :ZERG_DRONE
-19:19:05,948 [main] INFO  Production:81 - Queuing default unit:ZERG_DRONE
-19:19:05,948 [main] INFO  Production:107 - Queing request for a :ZERG_DRONE
-19:19:05,957 [main] INFO  Production:81 - Queuing default unit:ZERG_DRONE
-19:19:05,957 [main] INFO  Production:107 - Queing request for a :ZERG_DRONE
-19:19:05,966 [main] INFO  Production:81 - Queuing default unit:ZERG_DRONE
-19:19:05,966 [main] INFO  Production:107 - Queing request for a :ZERG_DRONE
-19:19:05,974 [main] INFO  Production:81 - Queuing default unit:ZERG_DRONE
-19:19:05,974 [main] INFO  Production:107 - Queing request for a :ZERG_DRONE
-19:19:05,980 [main] INFO  Production:81 - Queuing default unit:ZERG_DRONE
-19:19:05,981 [main] INFO  Production:107 - Queing request for a :ZERG_DRONE
-19:19:05,988 [main] INFO  Production:81 - Queuing default unit:ZERG_DRONE
-19:19:05,989 [main] INFO  Production:107 - Queing request for a :ZERG_DRONE
-19:19:05,997 [main] INFO  Production:81 - Queuing default unit:ZERG_DRONE
-19:19:05,998 [main] INFO  Production:107 - Queing request for a :ZERG_DRONE
-19:19:06,009 [main] INFO  Production:81 - Queuing default unit:ZERG_DRONE
-19:19:06,009 [main] INFO  Production:107 - Queing request for a :ZERG_DRONE
-19:19:06,017 [main] INFO  Production:81 - Queuing default unit:ZERG_DRONE
-19:19:06,017 [main] INFO  Production:107 - Queing request for a :ZERG_DRONE
-19:19:06,026 [main] INFO  Production:81 - Queuing default unit:ZERG_DRONE
-19:19:06,026 [main] INFO  Production:107 - Queing request for a :ZERG_DRONE
-19:19:06,034 [main] INFO  Production:81 - Queuing default unit:ZERG_DRONE
-19:19:06,034 [main] INFO  Production:107 - Queing request for a :ZERG_DRONE
-19:19:06,040 [main] INFO  Production:81 - Queuing default unit:ZERG_DRONE
-19:19:06,040 [main] INFO  Production:107 - Queing request for a :ZERG_DRONE
-19:19:06,047 [main] INFO  Production:81 - Queuing default unit:ZERG_DRONE
-19:19:06,047 [main] INFO  Production:107 - Queing request for a :ZERG_DRONE
-19:19:06,054 [main] INFO  Production:81 - Queuing default unit:ZERG_DRONE
-19:19:06,054 [main] INFO  Production:107 - Queing request for a :ZERG_DRONE
-19:19:06,063 [main] INFO  Production:81 - Queuing default unit:ZERG_DRONE
-19:19:06,064 [main] INFO  Production:107 - Queing request for a :ZERG_DRONE
-19:19:06,071 [main] INFO  Production:81 - Queuing default unit:ZERG_DRONE
-19:19:06,071 [main] INFO  Production:107 - Queing request for a :ZERG_DRONE
-19:19:06,079 [main] INFO  Production:81 - Queuing default unit:ZERG_DRONE
-19:19:06,079 [main] INFO  Production:107 - Queing request for a :ZERG_DRONE
-19:19:06,085 [main] INFO  Production:81 - Queuing default unit:ZERG_DRONE
-19:19:06,085 [main] INFO  Production:107 - Queing request for a :ZERG_DRONE
-19:19:06,092 [main] INFO  Production:81 - Queuing default unit:ZERG_DRONE
-19:19:06,092 [main] INFO  Production:107 - Queing request for a :ZERG_DRONE
-19:19:06,099 [main] INFO  Production:81 - Queuing default unit:ZERG_DRONE
-19:19:06,099 [main] INFO  Production:107 - Queing request for a :ZERG_DRONE
-19:19:06,106 [main] INFO  Production:81 - Queuing default unit:ZERG_DRONE
-19:19:06,106 [main] INFO  Production:107 - Queing request for a :ZERG_DRONE
-19:19:06,112 [main] INFO  Production:81 - Queuing default unit:ZERG_DRONE
-19:19:06,113 [main] INFO  Production:107 - Queing request for a :ZERG_DRONE
-19:19:06,122 [main] INFO  Production:81 - Queuing default unit:ZERG_DRONE
-19:19:06,122 [main] INFO  Production:107 - Queing request for a :ZERG_DRONE
-19:19:06,129 [main] INFO  Production:81 - Queuing default unit:ZERG_DRONE
-19:19:06,129 [main] INFO  Production:107 - Queing request for a :ZERG_DRONE
-19:19:06,137 [main] INFO  Production:81 - Queuing default unit:ZERG_DRONE
-19:19:06,137 [main] INFO  Production:107 - Queing request for a :ZERG_DRONE
-19:19:06,144 [main] INFO  Production:81 - Queuing default unit:ZERG_DRONE
-19:19:06,145 [main] INFO  Production:107 - Queing request for a :ZERG_DRONE
-19:19:06,153 [main] INFO  Production:81 - Queuing default unit:ZERG_DRONE
-19:19:06,153 [main] INFO  Production:107 - Queing request for a :ZERG_DRONE
-19:19:06,160 [main] INFO  Production:81 - Queuing default unit:ZERG_DRONE
-19:19:06,160 [main] INFO  Production:107 - Queing request for a :ZERG_DRONE
-19:19:06,168 [main] INFO  Production:81 - Queuing default unit:ZERG_DRONE
-19:19:06,168 [main] INFO  Production:107 - Queing request for a :ZERG_DRONE
-19:19:06,180 [main] INFO  Production:81 - Queuing default unit:ZERG_DRONE
-19:19:06,180 [main] INFO  Production:107 - Queing request for a :ZERG_DRONE
-19:19:06,189 [main] INFO  Production:81 - Queuing default unit:ZERG_DRONE
-19:19:06,189 [main] INFO  Production:107 - Queing request for a :ZERG_DRONE
-19:19:06,196 [main] INFO  Production:81 - Queuing default unit:ZERG_DRONE
-19:19:06,196 [main] INFO  Production:107 - Queing request for a :ZERG_DRONE
-19:19:06,204 [main] INFO  Production:81 - Queuing default unit:ZERG_DRONE
-19:19:06,204 [main] INFO  Production:107 - Queing request for a :ZERG_DRONE
-19:19:06,213 [main] INFO  Production:81 - Queuing default unit:ZERG_DRONE
-19:19:06,213 [main] INFO  Production:107 - Queing request for a :ZERG_DRONE
-19:19:06,220 [main] INFO  Production:81 - Queuing default unit:ZERG_DRONE
-19:19:06,221 [main] INFO  Production:107 - Queing request for a :ZERG_DRONE
-19:19:06,234 [main] INFO  Production:81 - Queuing default unit:ZERG_DRONE
-19:19:06,234 [main] INFO  Production:107 - Queing request for a :ZERG_DRONE
-19:19:06,245 [main] INFO  Production:81 - Queuing default unit:ZERG_DRONE
-19:19:06,246 [main] INFO  Production:107 - Queing request for a :ZERG_DRONE
-19:19:06,253 [main] INFO  Production:81 - Queuing default unit:ZERG_DRONE
-19:19:06,254 [main] INFO  Production:107 - Queing request for a :ZERG_DRONE
-19:19:06,260 [main] INFO  Production:81 - Queuing default unit:ZERG_DRONE
-19:19:06,260 [main] INFO  Production:107 - Queing request for a :ZERG_DRONE
-19:19:06,267 [main] INFO  Production:81 - Queuing default unit:ZERG_DRONE
-19:19:06,267 [main] INFO  Production:107 - Queing request for a :ZERG_DRONE
-19:19:06,275 [main] INFO  Production:81 - Queuing default unit:ZERG_DRONE
-19:19:06,275 [main] INFO  Production:107 - Queing request for a :ZERG_DRONE
-19:19:06,282 [main] INFO  Production:81 - Queuing default unit:ZERG_DRONE
-19:19:06,282 [main] INFO  Production:107 - Queing request for a :ZERG_DRONE
-19:19:06,293 [main] INFO  Production:81 - Queuing default unit:ZERG_DRONE
-19:19:06,293 [main] INFO  Production:107 - Queing request for a :ZERG_DRONE
-19:19:06,303 [main] INFO  Production:81 - Queuing default unit:ZERG_DRONE
-19:19:06,303 [main] INFO  Production:107 - Queing request for a :ZERG_DRONE
-19:19:06,311 [main] INFO  Production:81 - Queuing default unit:ZERG_DRONE
-19:19:06,311 [main] INFO  Production:107 - Queing request for a :ZERG_DRONE
-19:19:06,320 [main] INFO  Production:81 - Queuing default unit:ZERG_DRONE
-19:19:06,320 [main] INFO  Production:107 - Queing request for a :ZERG_DRONE
-19:19:06,329 [main] INFO  Production:81 - Queuing default unit:ZERG_DRONE
-19:19:06,329 [main] INFO  Production:107 - Queing request for a :ZERG_DRONE
-19:19:06,337 [main] INFO  Production:81 - Queuing default unit:ZERG_DRONE
-19:19:06,338 [main] INFO  Production:107 - Queing request for a :ZERG_DRONE
-19:19:06,351 [main] INFO  Production:81 - Queuing default unit:ZERG_DRONE
-19:19:06,351 [main] INFO  Production:107 - Queing request for a :ZERG_DRONE
-19:19:06,359 [main] INFO  Production:81 - Queuing default unit:ZERG_DRONE
-19:19:06,359 [main] INFO  Production:107 - Queing request for a :ZERG_DRONE
-19:19:06,367 [main] INFO  Production:81 - Queuing default unit:ZERG_DRONE
-19:19:06,368 [main] INFO  Production:107 - Queing request for a :ZERG_DRONE
-19:19:06,375 [main] INFO  Production:81 - Queuing default unit:ZERG_DRONE
-19:19:06,375 [main] INFO  Production:107 - Queing request for a :ZERG_DRONE
-19:19:06,383 [main] INFO  Production:81 - Queuing default unit:ZERG_DRONE
-19:19:06,383 [main] INFO  Production:107 - Queing request for a :ZERG_DRONE
-19:19:06,390 [main] INFO  Production:81 - Queuing default unit:ZERG_DRONE
-19:19:06,390 [main] INFO  Production:107 - Queing request for a :ZERG_DRONE
-19:19:06,398 [main] INFO  Production:81 - Queuing default unit:ZERG_DRONE
-19:19:06,398 [main] INFO  Production:107 - Queing request for a :ZERG_DRONE
-19:19:06,409 [main] INFO  Production:81 - Queuing default unit:ZERG_DRONE
-19:19:06,409 [main] INFO  Production:107 - Queing request for a :ZERG_DRONE
-19:19:06,420 [main] INFO  Production:81 - Queuing default unit:ZERG_DRONE
-19:19:06,420 [main] INFO  Production:107 - Queing request for a :ZERG_DRONE
-19:19:06,427 [main] INFO  Production:81 - Queuing default unit:ZERG_DRONE
-19:19:06,428 [main] INFO  Production:107 - Queing request for a :ZERG_DRONE
-19:19:06,435 [main] INFO  Production:81 - Queuing default unit:ZERG_DRONE
-19:19:06,435 [main] INFO  Production:107 - Queing request for a :ZERG_DRONE
-19:19:06,443 [main] INFO  Production:81 - Queuing default unit:ZERG_DRONE
-19:19:06,444 [main] INFO  Production:107 - Queing request for a :ZERG_DRONE
-19:19:06,453 [main] INFO  Production:81 - Queuing default unit:ZERG_DRONE
-19:19:06,453 [main] INFO  Production:107 - Queing request for a :ZERG_DRONE
-19:19:06,464 [main] INFO  Production:81 - Queuing default unit:ZERG_DRONE
-19:19:06,464 [main] INFO  Production:107 - Queing request for a :ZERG_DRONE
-19:19:06,476 [main] INFO  Data:116 - Unit created :ZERG_DRONE tag:{"Tag":4345561089}
-19:19:06,477 [main] INFO  Production:81 - Queuing default unit:ZERG_DRONE
-19:19:06,477 [main] INFO  Production:107 - Queing request for a :ZERG_DRONE
-19:19:06,485 [main] INFO  Production:81 - Queuing default unit:ZERG_DRONE
-19:19:06,485 [main] INFO  Production:107 - Queing request for a :ZERG_DRONE
-19:19:06,493 [main] INFO  Production:81 - Queuing default unit:ZERG_DRONE
-19:19:06,493 [main] INFO  Production:107 - Queing request for a :ZERG_DRONE
-19:19:06,500 [main] INFO  Production:81 - Queuing default unit:ZERG_DRONE
-19:19:06,500 [main] INFO  Production:107 - Queing request for a :ZERG_DRONE
-19:19:06,506 [main] INFO  Production:81 - Queuing default unit:ZERG_DRONE
-19:19:06,506 [main] INFO  Production:107 - Queing request for a :ZERG_DRONE
-19:19:06,517 [main] INFO  Production:81 - Queuing default unit:ZERG_DRONE
-19:19:06,517 [main] INFO  Production:107 - Queing request for a :ZERG_DRONE
-19:19:06,525 [main] INFO  Production:81 - Queuing default unit:ZERG_DRONE
-19:19:06,525 [main] INFO  Production:107 - Queing request for a :ZERG_DRONE
-19:19:06,534 [main] INFO  Production:81 - Queuing default unit:ZERG_DRONE
-19:19:06,534 [main] INFO  Production:107 - Queing request for a :ZERG_DRONE
-19:19:06,541 [main] INFO  Production:81 - Queuing default unit:ZERG_DRONE
-19:19:06,541 [main] INFO  Production:107 - Queing request for a :ZERG_DRONE
-19:19:06,548 [main] INFO  Production:81 - Queuing default unit:ZERG_DRONE
-19:19:06,549 [main] INFO  Production:107 - Queing request for a :ZERG_DRONE
-19:19:06,557 [main] INFO  Production:81 - Queuing default unit:ZERG_DRONE
-19:19:06,557 [main] INFO  Production:107 - Queing request for a :ZERG_DRONE
-19:19:06,564 [main] INFO  Production:81 - Queuing default unit:ZERG_DRONE
-19:19:06,564 [main] INFO  Production:107 - Queing request for a :ZERG_DRONE
-19:19:06,575 [main] INFO  Production:81 - Queuing default unit:ZERG_DRONE
-19:19:06,575 [main] INFO  Production:107 - Queing request for a :ZERG_DRONE
-19:19:06,585 [main] INFO  Data:116 - Unit created :ZERG_OVERLORD tag:{"Tag":4336386050}
-19:19:06,585 [main] INFO  Production:81 - Queuing default unit:ZERG_DRONE
-19:19:06,586 [main] INFO  Production:107 - Queing request for a :ZERG_DRONE
-19:19:07,162 [main] INFO  Data:116 - Unit created :ZERG_LARVA tag:{"Tag":4336123906}
-19:19:07,163 [main] INFO  Production:81 - Queuing default unit:ZERG_DRONE
-19:19:07,163 [main] INFO  Production:107 - Queing request for a :ZERG_DRONE
-19:19:07,277 [main] INFO  Data:116 - Unit created :ZERG_DRONE tag:{"Tag":4345823233}
-19:19:08,492 [main] INFO  Data:116 - Unit created :ZERG_DRONE tag:{"Tag":4346085377}
-19:19:08,824 [main] INFO  Data:116 - Unit created :ZERG_LARVA tag:{"Tag":4340842499}
-19:19:08,824 [main] INFO  Production:81 - Queuing default unit:ZERG_DRONE
-19:19:08,824 [main] INFO  Production:107 - Queing request for a :ZERG_DRONE
-19:19:09,055 [main] INFO  Data:116 - Unit created :ZERG_DRONE tag:{"Tag":4346347521}
-19:19:10,721 [main] INFO  Data:116 - Unit created :ZERG_LARVA tag:{"Tag":4346871809}
-19:19:10,722 [main] INFO  Production:81 - Queuing default unit:ZERG_DRONE
-19:19:10,723 [main] INFO  Production:107 - Queing request for a :ZERG_DRONE
-19:19:11,010 [main] INFO  Data:116 - Unit created :ZERG_DRONE tag:{"Tag":4347133953}
-19:19:12,613 [main] INFO  Data:116 - Unit created :ZERG_LARVA tag:{"Tag":4345298947}
-19:19:12,614 [main] INFO  Production:81 - Queuing default unit:ZERG_DRONE
-19:19:12,614 [main] INFO  Production:107 - Queing request for a :ZERG_DRONE
-19:19:12,829 [main] INFO  Data:116 - Unit created :ZERG_DRONE tag:{"Tag":4347920385}
-19:19:14,152 [main] INFO  Data:116 - Unit created :ZERG_LARVA tag:{"Tag":4347396098}
-19:19:14,153 [main] INFO  Production:107 - Queing request for a :ZERG_OVERLORD
-19:19:14,363 [main] INFO  Data:116 - Unit created :ZERG_DRONE tag:{"Tag":4348444673}
-19:19:15,775 [main] INFO  Data:116 - Unit created :ZERG_LARVA tag:{"Tag":4345298948}
-19:19:15,775 [main] INFO  Production:81 - Queuing default unit:ZERG_DRONE
-19:19:15,775 [main] INFO  Production:107 - Queing request for a :ZERG_DRONE
-19:19:16,804 [main] INFO  Data:116 - Unit created :ZERG_OVERLORD tag:{"Tag":4342153218}
-19:19:17,390 [main] INFO  Data:116 - Unit created :ZERG_LARVA tag:{"Tag":4347396099}
-19:19:17,391 [main] INFO  Production:81 - Queuing default unit:ZERG_DRONE
-19:19:17,391 [main] INFO  Production:107 - Queing request for a :ZERG_DRONE
-19:19:17,656 [main] INFO  Data:116 - Unit created :ZERG_DRONE tag:{"Tag":4348968961}
-19:19:17,656 [main] INFO  Production:68 - Unable to build a :ZERG_ROACH_WARREN
-19:19:19,157 [main] INFO  Data:116 - Unit created :ZERG_LARVA tag:{"Tag":4349755393}
-19:19:19,157 [main] INFO  Production:81 - Queuing default unit:ZERG_DRONE
-19:19:19,157 [main] INFO  Production:107 - Queing request for a :ZERG_DRONE
-19:19:19,358 [main] INFO  Data:116 - Unit created :ZERG_DRONE tag:{"Tag":4350017537}
-19:19:20,730 [main] INFO  Data:116 - Unit created :ZERG_LARVA tag:{"Tag":4346871812}
-19:19:20,730 [main] INFO  Production:81 - Queuing default unit:ZERG_DRONE
-19:19:20,730 [main] INFO  Production:107 - Queing request for a :ZERG_DRONE
-19:19:20,958 [main] INFO  Data:116 - Unit created :ZERG_DRONE tag:{"Tag":4351066113}
-19:19:22,329 [main] INFO  Data:116 - Unit created :ZERG_LARVA tag:{"Tag":4345036802}
-19:19:22,330 [main] INFO  Production:81 - Queuing default unit:ZERG_DRONE
-19:19:22,330 [main] INFO  Production:107 - Queing request for a :ZERG_DRONE
-19:19:22,560 [main] INFO  Data:116 - Unit created :ZERG_DRONE tag:{"Tag":4351590401}
-19:19:24,022 [main] INFO  Data:116 - Unit created :ZERG_LARVA tag:{"Tag":4349755395}
-19:19:24,023 [main] INFO  Production:81 - Queuing default unit:ZERG_DRONE
-19:19:24,023 [main] INFO  Production:107 - Queing request for a :ZERG_DRONE
-19:19:24,302 [main] INFO  Data:116 - Unit created :ZERG_DRONE tag:{"Tag":4352114689}
-19:19:25,882 [main] INFO  Data:116 - Unit created :ZERG_LARVA tag:{"Tag":4346871814}
-19:19:25,883 [main] INFO  Production:81 - Queuing default unit:ZERG_DRONE
-19:19:25,883 [main] INFO  Production:107 - Queing request for a :ZERG_DRONE
-19:19:26,161 [main] INFO  Data:116 - Unit created :ZERG_DRONE tag:{"Tag":4352376833}
-19:19:26,162 [main] INFO  Production:107 - Queing request for a :ZERG_EVOLUTION_CHAMBER
-19:19:26,162 [main] WARN  BuildUtils:252 - Warning, unable to build building :ZERG_EVOLUTION_CHAMBER
-19:19:27,713 [main] INFO  Data:116 - Unit created :ZERG_LARVA tag:{"Tag":4353425410}
-19:19:27,714 [main] INFO  Production:81 - Queuing default unit:ZERG_DRONE
-19:19:27,714 [main] INFO  Production:107 - Queing request for a :ZERG_DRONE
-19:19:28,030 [main] INFO  Data:116 - Unit created :ZERG_DRONE tag:{"Tag":4352901122}
+19:34:03,040 [main] INFO  ControlInterfaceImpl:159 - Waiting for connection...
+19:34:03,053 [main] INFO  S2Controller:210 - Launching Starcraft II with configuration: Config(SimpleConfigObject({"file":{"encoding":"UTF-8","separator":"\\"},"java":{"class":{"path":"D:\\Code\\SC2AI\\MacroBot2\\out\\production\\MacroBot2;C:\\Users\\ucjuk\\.m2\\repository\\com\\github\\ocraft\\ocraft-s2client-api\\0.3.13\\ocraft-s2client-api-0.3.13.jar;C:\\Users\\ucjuk\\.m2\\repository\\com\\github\\ocraft\\ocraft-s2client-protocol\\0.3.13\\ocraft-s2client-protocol-0.3.13.jar;C:\\Users\\ucjuk\\.m2\\repository\\com\\google\\protobuf\\protobuf-java\\3.7.1\\protobuf-java-3.7.1.jar;C:\\Users\\ucjuk\\.m2\\repository\\com\\fasterxml\\jackson\\core\\jackson-databind\\2.9.7\\jackson-databind-2.9.7.jar;C:\\Users\\ucjuk\\.m2\\repository\\com\\fasterxml\\jackson\\core\\jackson-core\\2.9.7\\jackson-core-2.9.7.jar;C:\\Users\\ucjuk\\.m2\\repository\\com\\fasterxml\\jackson\\datatype\\jackson-datatype-jdk8\\2.9.7\\jackson-datatype-jdk8-2.9.7.jar;C:\\Users\\ucjuk\\.m2\\repository\\com\\fasterxml\\jackson\\core\\jackson-annotations\\2.9.7\\jackson-annotations-2.9.7.jar;C:\\Users\\ucjuk\\.m2\\repository\\io\\vertx\\vertx-web-client\\3.7.0\\vertx-web-client-3.7.0.jar;C:\\Users\\ucjuk\\.m2\\repository\\io\\vertx\\vertx-web-common\\3.7.0\\vertx-web-common-3.7.0.jar;C:\\Users\\ucjuk\\.m2\\repository\\io\\vertx\\vertx-core\\3.7.0\\vertx-core-3.7.0.jar;C:\\Users\\ucjuk\\.m2\\repository\\io\\netty\\netty-common\\4.1.30.Final\\netty-common-4.1.30.Final.jar;C:\\Users\\ucjuk\\.m2\\repository\\io\\netty\\netty-buffer\\4.1.30.Final\\netty-buffer-4.1.30.Final.jar;C:\\Users\\ucjuk\\.m2\\repository\\io\\netty\\netty-transport\\4.1.30.Final\\netty-transport-4.1.30.Final.jar;C:\\Users\\ucjuk\\.m2\\repository\\io\\netty\\netty-handler\\4.1.30.Final\\netty-handler-4.1.30.Final.jar;C:\\Users\\ucjuk\\.m2\\repository\\io\\netty\\netty-codec\\4.1.30.Final\\netty-codec-4.1.30.Final.jar;C:\\Users\\ucjuk\\.m2\\repository\\io\\netty\\netty-handler-proxy\\4.1.30.Final\\netty-handler-proxy-4.1.30.Final.jar;C:\\Users\\ucjuk\\.m2\\repository\\io\\netty\\netty-codec-socks\\4.1.30.Final\\netty-codec-socks-4.1.30.Final.jar;C:\\Users\\ucjuk\\.m2\\repository\\io\\netty\\netty-codec-http\\4.1.30.Final\\netty-codec-http-4.1.30.Final.jar;C:\\Users\\ucjuk\\.m2\\repository\\io\\netty\\netty-codec-http2\\4.1.30.Final\\netty-codec-http2-4.1.30.Final.jar;C:\\Users\\ucjuk\\.m2\\repository\\io\\netty\\netty-resolver\\4.1.30.Final\\netty-resolver-4.1.30.Final.jar;C:\\Users\\ucjuk\\.m2\\repository\\io\\netty\\netty-resolver-dns\\4.1.30.Final\\netty-resolver-dns-4.1.30.Final.jar;C:\\Users\\ucjuk\\.m2\\repository\\io\\netty\\netty-codec-dns\\4.1.30.Final\\netty-codec-dns-4.1.30.Final.jar;C:\\Users\\ucjuk\\.m2\\repository\\io\\vertx\\vertx-rx-java2\\3.7.0\\vertx-rx-java2-3.7.0.jar;C:\\Users\\ucjuk\\.m2\\repository\\io\\reactivex\\rxjava2\\rxjava\\2.2.4\\rxjava-2.2.4.jar;C:\\Users\\ucjuk\\.m2\\repository\\org\\reactivestreams\\reactive-streams\\1.0.2\\reactive-streams-1.0.2.jar;C:\\Users\\ucjuk\\.m2\\repository\\io\\vertx\\vertx-rx-gen\\3.7.0\\vertx-rx-gen-3.7.0.jar;C:\\Users\\ucjuk\\.m2\\repository\\io\\vertx\\vertx-codegen\\3.7.0\\vertx-codegen-3.7.0.jar;C:\\Users\\ucjuk\\.m2\\repository\\org\\mvel\\mvel2\\2.3.1.Final\\mvel2-2.3.1.Final.jar;C:\\Users\\ucjuk\\.m2\\repository\\org\\javassist\\javassist\\3.23.1-GA\\javassist-3.23.1-GA.jar;C:\\Users\\ucjuk\\.m2\\repository\\org\\slf4j\\slf4j-api\\1.7.25\\slf4j-api-1.7.25.jar;C:\\Users\\ucjuk\\.m2\\repository\\org\\apache\\logging\\log4j\\log4j-slf4j-impl\\2.11.1\\log4j-slf4j-impl-2.11.1.jar;C:\\Users\\ucjuk\\.m2\\repository\\org\\apache\\logging\\log4j\\log4j-api\\2.11.1\\log4j-api-2.11.1.jar;C:\\Users\\ucjuk\\.m2\\repository\\org\\apache\\logging\\log4j\\log4j-core\\2.11.1\\log4j-core-2.11.1.jar;C:\\Users\\ucjuk\\.m2\\repository\\com\\typesafe\\config\\1.3.3\\config-1.3.3.jar;C:\\Users\\ucjuk\\.m2\\repository\\org\\projectlombok\\lombok\\1.18.12\\lombok-1.18.12.jar;C:\\Users\\ucjuk\\.m2\\repository\\com\\github\\ocraft\\ocraft-s2client-bot\\0.3.13\\ocraft-s2client-bot-0.3.13.jar;C:\\Users\\ucjuk\\.m2\\repository\\info\\picocli\\picocli\\3.7.0\\picocli-3.7.0.jar","version":"57.0"},"home":"C:\\Program Files\\Java\\jdk-13.0.1","io":{"tmpdir":"C:\\Users\\ucjuk\\AppData\\Local\\Temp\\"},"library":{"path":"C:\\Program Files\\Java\\jdk-13.0.1\\bin;C:\\WINDOWS\\Sun\\Java\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\Program Files (x86)\\Razer\\ChromaBroadcast\\bin;C:\\Program Files\\Razer\\ChromaBroadcast\\bin;C:\\Program Files (x86)\\Razer Chroma SDK\\bin;C:\\Program Files\\Razer Chroma SDK\\bin;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NGX;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files (x86)\\get_iplayer;D:\\Code\\lib\\gradle-6.0.1\\bin;D:\\Code\\lib\\Git\\cmd;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Users\\ucjuk\\AppData\\Local\\Microsoft\\WindowsApps;;D:\\Code\\IntelliJ IDEA Community Edition 2020.1\\bin;;."},"runtime":{"name":"Java(TM) SE Runtime Environment","version":"13.0.1+9"},"specification":{"name":"Java Platform API Specification","vendor":"Oracle Corporation","version":"13"},"vendor":{"url":{"bug":"https://bugreport.java.com/bugreport/"}},"version":{"date":"2019-10-15"},"vm":{"compressedOopsMode":"Zero based","info":"mixed mode, sharing","name":"Java HotSpot(TM) 64-Bit Server VM","specification":{"name":"Java Virtual Machine Specification","vendor":"Oracle Corporation","version":"13"},"vendor":"Oracle Corporation","version":"13.0.1+9"}},"jdk":{"debug":"release"},"line":{"separator":"\r\n"},"ocraft":{"bot":{"map":null,"multithreaded":false,"realtime":false,"replayRecovery":true,"stepSize":1,"traced":false},"client":{"buffer":{"size":{"request":{"eventBus":8192,"queue":8192},"response":{"backpressure":8192,"eventBus":524288,"stream":8192}}},"net":{"connectTimeoutInMillis":60000,"ip":"127.0.0.1","maxWebSocketFrameSizeInBytes":20971520,"port":5000,"retry":20,"synchronousRequestTimeoutInMillis":60000},"traced":false},"game":{"cli":{"dataDir":null,"eglpath":null,"needsSupportDir":true,"osmesapath":null,"tempDir":null,"verbose":null},"executable":{"baseBuild":"Base78285","dataVersion":null,"exeFileName":"SC2_x64.exe","is64Bit":true,"path":"D:\\Games\\StarCraft II\\Versions\\Base78285\\SC2_x64.exe","root":"D:\\Games\\StarCraft II"},"net":{"ip":"127.0.0.1","port":5000,"retry":10,"timeoutInMillis":2000},"window":{"height":768,"mode":0,"width":1024,"x":0,"y":0}}},"os":{"arch":"amd64","name":"Windows 10","version":"10.0"},"path":{"separator":";"},"sun":{"arch":{"data":{"model":"64"}},"boot":{"library":{"path":"C:\\Program Files\\Java\\jdk-13.0.1\\bin"}},"cpu":{"endian":"little","isalist":"amd64"},"io":{"unicode":{"encoding":"UnicodeLittle"}},"java":{"command":"com.mrceej.sc2.BotClient","launcher":"SUN_STANDARD"},"jnu":{"encoding":"Cp1252"},"management":{"compiler":"HotSpot 64-Bit Tiered Compilers"},"os":{"patch":{"level":""}}},"user":{"country":"GB","dir":"D:\\Code\\SC2AI\\MacroBot2","home":"C:\\Users\\ucjuk","language":"en","name":"ucjuk","script":"","timezone":"Europe/London","variant":""}})).
+19:34:03,141 [main] INFO  S2Controller:242 - Launched SC2 (D:\Games\StarCraft II\Versions\Base78285\SC2_x64.exe), PID: 9388
+19:34:19,424 [main] INFO  S2Client:160 - Starting: S2Client{connectToIp='127.0.0.1', connectToPort=5000, requestTimeoutInMillis=60000, connectTimeoutInMillis=60000, done=false, traced=false}
+19:34:20,419 [vert.x-eventloop-thread-0] INFO  OnConnect:71 - Connected.
+19:34:20,539 [vert.x-eventloop-thread-0] WARN  Ping:84 - Ocraft uses sc2api in version 4.10.3.76114. The game server uses 4.11.4.78285.
+19:34:20,578 [main] INFO  ControlInterfaceImpl:178 - Connected to 127.0.0.1:5000
+19:34:21,736 [main] INFO  ControlInterfaceImpl:338 - Waiting for the JoinGame response.
+19:34:48,994 [main] INFO  ControlInterfaceImpl:357 - WaitJoinGame finished successfully.
+19:34:49,902 [main] INFO  Data:116 - Unit created :ZERG_HATCHERY tag:{"Tag":4335861761}
+19:34:49,951 [main] INFO  Data:116 - Unit created :ZERG_LARVA tag:{"Tag":4336123905}
+19:34:49,952 [main] INFO  Data:116 - Unit created :ZERG_LARVA tag:{"Tag":4336386049}
+19:34:49,952 [main] INFO  Data:116 - Unit created :ZERG_LARVA tag:{"Tag":4336648193}
+19:34:49,953 [main] INFO  Data:116 - Unit created :ZERG_DRONE tag:{"Tag":4336910337}
+19:34:49,953 [main] INFO  Data:116 - Unit created :ZERG_DRONE tag:{"Tag":4337172481}
+19:34:49,954 [main] INFO  Data:116 - Unit created :ZERG_DRONE tag:{"Tag":4337434625}
+19:34:49,955 [main] INFO  Data:116 - Unit created :ZERG_DRONE tag:{"Tag":4337696769}
+19:34:49,955 [main] INFO  Data:116 - Unit created :ZERG_DRONE tag:{"Tag":4337958913}
+19:34:49,955 [main] INFO  Data:116 - Unit created :ZERG_DRONE tag:{"Tag":4338221057}
+19:34:49,957 [main] INFO  Data:116 - Unit created :ZERG_DRONE tag:{"Tag":4338483201}
+19:34:49,957 [main] INFO  Data:116 - Unit created :ZERG_DRONE tag:{"Tag":4338745345}
+19:34:49,957 [main] INFO  Data:116 - Unit created :ZERG_DRONE tag:{"Tag":4339007489}
+19:34:49,957 [main] INFO  Data:116 - Unit created :ZERG_DRONE tag:{"Tag":4339269633}
+19:34:49,958 [main] INFO  Data:116 - Unit created :ZERG_DRONE tag:{"Tag":4339531777}
+19:34:49,958 [main] INFO  Data:116 - Unit created :ZERG_DRONE tag:{"Tag":4339793921}
+19:34:49,959 [main] INFO  Data:116 - Unit created :ZERG_OVERLORD tag:{"Tag":4340056065}
+19:34:49,999 [main] INFO  Production:110 - Switching to new build :DEFAULT
+19:34:52,154 [main] INFO  Production:78 - Queuing request for a :ZERG_OVERLORD
+19:34:52,154 [main] INFO  Production:70 - Handling request for a :ZERG_OVERLORD
+19:34:53,057 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:34:53,057 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:34:53,859 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:34:53,860 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:34:54,096 [main] INFO  Data:116 - Unit created :ZERG_LARVA tag:{"Tag":4341104642}
+19:34:54,649 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:34:54,650 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:34:54,658 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:34:54,658 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:34:54,667 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:34:54,667 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:34:54,679 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:34:54,679 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:34:54,687 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:34:54,687 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:34:54,705 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:34:54,705 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:34:54,713 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:34:54,713 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:34:54,721 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:34:54,721 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:34:54,731 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:34:54,731 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:34:54,742 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:34:54,742 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:34:54,752 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:34:54,752 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:34:54,766 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:34:54,766 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:34:54,775 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:34:54,776 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:34:54,784 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:34:54,784 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:34:54,793 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:34:54,793 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:34:54,802 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:34:54,802 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:34:54,810 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:34:54,810 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:34:54,822 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:34:54,822 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:34:54,831 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:34:54,831 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:34:54,840 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:34:54,841 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:34:54,849 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:34:54,850 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:34:54,859 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:34:54,859 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:34:54,869 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:34:54,869 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:34:54,888 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:34:54,888 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:34:54,900 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:34:54,900 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:34:54,911 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:34:54,912 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:34:54,922 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:34:54,922 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:34:54,930 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:34:54,931 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:34:54,944 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:34:54,945 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:34:54,955 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:34:54,955 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:34:54,966 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:34:54,966 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:34:54,973 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:34:54,973 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:34:54,981 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:34:54,981 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:34:54,989 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:34:54,989 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:34:55,001 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:34:55,001 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:34:55,010 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:34:55,010 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:34:55,020 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:34:55,020 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:34:55,028 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:34:55,028 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:34:55,036 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:34:55,036 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:34:55,044 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:34:55,045 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:34:55,057 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:34:55,057 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:34:55,067 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:34:55,067 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:34:55,076 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:34:55,077 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:34:55,086 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:34:55,086 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:34:55,095 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:34:55,095 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:34:55,104 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:34:55,104 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:34:55,117 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:34:55,117 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:34:55,127 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:34:55,127 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:34:55,136 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:34:55,137 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:34:55,146 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:34:55,146 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:34:55,155 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:34:55,155 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:34:55,163 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:34:55,163 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:34:55,176 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:34:55,176 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:34:55,185 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:34:55,186 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:34:55,195 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:34:55,195 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:34:55,203 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:34:55,203 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:34:55,210 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:34:55,211 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:34:55,218 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:34:55,218 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:34:55,233 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:34:55,233 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:34:55,242 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:34:55,242 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:34:55,250 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:34:55,250 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:34:55,258 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:34:55,258 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:34:55,265 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:34:55,266 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:34:55,274 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:34:55,274 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:34:55,285 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:34:55,286 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:34:55,295 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:34:55,295 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:34:55,304 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:34:55,304 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:34:55,313 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:34:55,313 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:34:55,323 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:34:55,323 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:34:55,335 [main] INFO  Data:116 - Unit created :ZERG_DRONE tag:{"Tag":4345561089}
+19:34:55,336 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:34:55,336 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:34:55,383 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:34:55,384 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:34:55,393 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:34:55,393 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:34:55,401 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:34:55,402 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:34:55,409 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:34:55,410 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:34:55,416 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:34:55,416 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:34:55,424 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:34:55,424 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:34:55,431 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:34:55,432 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:34:55,443 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:34:55,443 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:34:55,451 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:34:55,451 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:34:55,461 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:34:55,461 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:34:55,468 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:34:55,469 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:34:55,476 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:34:55,477 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:34:55,483 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:34:55,483 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:34:55,491 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:34:55,491 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:34:55,503 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:34:55,503 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:34:55,511 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:34:55,511 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:34:55,521 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:34:55,521 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:34:55,529 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:34:55,529 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:34:55,538 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:34:55,538 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:34:55,547 [main] INFO  Data:116 - Unit created :ZERG_OVERLORD tag:{"Tag":4336386050}
+19:34:55,547 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:34:55,548 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:34:56,187 [main] INFO  Data:116 - Unit created :ZERG_LARVA tag:{"Tag":4336123906}
+19:34:56,188 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:34:56,188 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:34:56,213 [main] INFO  Data:116 - Unit created :ZERG_DRONE tag:{"Tag":4345823233}
+19:34:57,741 [main] INFO  Data:116 - Unit created :ZERG_DRONE tag:{"Tag":4346085377}
+19:34:58,126 [main] INFO  Data:116 - Unit created :ZERG_LARVA tag:{"Tag":4341104643}
+19:34:58,318 [main] INFO  Production:78 - Queuing request for a :ZERG_SPAWNING_POOL
+19:34:58,319 [main] INFO  Production:70 - Handling request for a :ZERG_SPAWNING_POOL
+19:34:58,363 [main] INFO  Production:78 - Queuing request for a :ZERG_SPAWNING_POOL
+19:34:58,363 [main] INFO  Production:70 - Handling request for a :ZERG_SPAWNING_POOL
+19:34:58,399 [main] INFO  Data:116 - Unit created :ZERG_DRONE tag:{"Tag":4346347521}
+19:34:59,007 [main] INFO  Data:116 - Unit created :ZERG_SPAWNING_POOL tag:{"Tag":4340580354}
+19:34:59,037 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:34:59,037 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:35:00,032 [main] INFO  Data:116 - Unit created :ZERG_LARVA tag:{"Tag":4347133953}
+19:35:00,032 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:35:00,033 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:35:01,119 [main] INFO  Data:116 - Unit created :ZERG_DRONE tag:{"Tag":4347920385}
+19:35:01,797 [main] INFO  Data:116 - Unit created :ZERG_LARVA tag:{"Tag":4340842499}
+19:35:01,797 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:35:01,797 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:35:02,034 [main] INFO  Data:116 - Unit created :ZERG_DRONE tag:{"Tag":4346871810}
+19:35:03,575 [main] INFO  Data:116 - Unit created :ZERG_LARVA tag:{"Tag":4347658242}
+19:35:03,575 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:35:03,576 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:35:03,826 [main] INFO  Data:116 - Unit created :ZERG_DRONE tag:{"Tag":4348706817}
+19:35:05,338 [main] INFO  Data:116 - Unit created :ZERG_LARVA tag:{"Tag":4340842500}
+19:35:05,338 [main] INFO  Production:78 - Queuing request for a :ZERG_OVERLORD
+19:35:05,338 [main] INFO  Production:70 - Handling request for a :ZERG_OVERLORD
+19:35:05,569 [main] INFO  Data:116 - Unit created :ZERG_DRONE tag:{"Tag":4348968961}
+19:35:07,250 [main] INFO  Data:116 - Unit created :ZERG_LARVA tag:{"Tag":4336910338}
+19:35:07,251 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:35:07,251 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:35:08,642 [main] INFO  Data:116 - Unit created :ZERG_OVERLORD tag:{"Tag":4349755393}
+19:35:09,242 [main] INFO  Data:116 - Unit created :ZERG_LARVA tag:{"Tag":4340842501}
+19:35:09,242 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:35:09,242 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:35:09,505 [main] INFO  Data:116 - Unit created :ZERG_DRONE tag:{"Tag":4350017537}
+19:35:09,506 [main] INFO  Production:78 - Queuing request for a :ZERG_ROACH_WARREN
+19:35:09,506 [main] INFO  Production:70 - Handling request for a :ZERG_ROACH_WARREN
+19:35:09,520 [main] INFO  Production:78 - Queuing request for a :ZERG_ROACH_WARREN
+19:35:09,520 [main] INFO  Production:70 - Handling request for a :ZERG_ROACH_WARREN
+19:35:09,537 [main] INFO  Production:78 - Queuing request for a :ZERG_ROACH_WARREN
+19:35:09,537 [main] INFO  Production:70 - Handling request for a :ZERG_ROACH_WARREN
+19:35:09,753 [main] INFO  Production:78 - Queuing request for a :ZERG_ROACH_WARREN
+19:35:09,754 [main] INFO  Production:70 - Handling request for a :ZERG_ROACH_WARREN
+19:35:10,082 [main] INFO  Data:116 - Unit created :ZERG_ROACH_WARREN tag:{"Tag":4336910339}
+19:35:10,242 [main] INFO  Data:116 - Unit created :ZERG_ROACH_WARREN tag:{"Tag":4351066113}
+19:35:10,275 [main] INFO  Data:116 - Unit created :ZERG_ROACH_WARREN tag:{"Tag":4351328257}
+19:35:10,633 [main] INFO  Data:116 - Unit created :ZERG_ROACH_WARREN tag:{"Tag":4342677507}
+19:35:11,190 [main] INFO  Data:116 - Unit created :ZERG_LARVA tag:{"Tag":4352114689}
+19:35:11,191 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:35:11,191 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:35:11,431 [main] INFO  Data:116 - Unit created :ZERG_DRONE tag:{"Tag":4352376833}
+19:35:12,981 [main] INFO  Data:116 - Unit created :ZERG_LARVA tag:{"Tag":4343463938}
+19:35:12,981 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:35:12,981 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:35:13,252 [main] INFO  Data:116 - Unit created :ZERG_DRONE tag:{"Tag":4336123910}
+19:35:15,157 [main] INFO  Data:116 - Unit created :ZERG_LARVA tag:{"Tag":4340842503}
+19:35:15,157 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:35:15,157 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE
+19:35:15,414 [main] INFO  Data:116 - Unit created :ZERG_DRONE tag:{"Tag":4353425409}
+19:35:17,396 [main] INFO  Data:116 - Unit created :ZERG_LARVA tag:{"Tag":4352901122}
+19:35:17,397 [main] INFO  Production:78 - Queuing request for a :ZERG_DRONE
+19:35:17,397 [main] INFO  Production:70 - Handling request for a :ZERG_DRONE

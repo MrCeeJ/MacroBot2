@@ -7,6 +7,7 @@ import io.vertx.core.net.impl.VertxEventLoopGroup;
 import lombok.extern.slf4j.Slf4j;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -43,88 +44,43 @@ public class Production extends CeejBotComponent {
 
     @Override
     public void update() {
-        processCurrentBuild();
+        processBuild();
         processBuildRequests();
     }
 
-    /*
-        1) If we need supply, build it. If we can't afford it wait
-        2) If we have a build order item, build it. If we can't afford it wait
-        3) Build the Default unit(s) of the build order
-     */
-    private void processCurrentBuild() {
-
+    private void processBuild() {
         if (needSupply()) {
             if (buildUtils.checkCanMakeUnit(ZERG_OVERLORD, data.getMinerals(), data.getGas())) {
                 queueConstruction(new BuildRequest(ZERG_OVERLORD));
             } else {
                 //log.info("Need more overlords, but not enough minerals:" + data.getMinerals() + "/" + buildUtils.getMineralCost(ZERG_OVERLORD));
             }
-        } else if (checkBuild()) { //TODO: Needs to hit this every time in case no funds
-            Units unit = currentBuild.getBuildOrderEntry(currentBuildStep).getUnit();
-            if (buildUtils.checkCanMakeUnit(unit, data.getMinerals(), data.getGas())) {
-                queueConstruction(new BuildRequest(unit));
-            } else {
-                log.info("Unable to build a :" + unit);
-            }
-        } else if (checkExpansion()) {
-            if (data.getMinerals() >= 300) {
-                // Check expansion is not already in progress
-                queueConstruction(new BuildRequest(ZERG_HATCHERY));
-            } else {
-                log.info("Need an expansion, but not enough minerals:" + data.getMinerals());
-            }
         } else {
-            if (currentBuild != null) {
-                Units defaultUnits = currentBuild.getDefaultConstruction();
-                if (buildUtils.checkCanMakeUnit(defaultUnits, data.getMinerals(), data.getGas())) {
-                    log.info("Queuing default unit:" + defaultUnits);
-                    queueConstruction(new BuildRequest(defaultUnits));
-                }
-            } else {
-                if (buildUtils.checkCanMakeUnit(ZERG_DRONE, data.getMinerals(), data.getGas())) {
-                    queueConstruction(new BuildRequest(ZERG_DRONE));
-                    log.info("Queuing emergency backup Drone");
-                }
+            Units unit = currentBuild.getNextProductionItem();
+            if (unit != null && buildUtils.checkCanMakeUnit(unit, data.getMinerals(), data.getGas())) {
+                queueConstruction(new BuildRequest(unit));
             }
         }
     }
+
 
     private void processBuildRequests() {
         BuildRequest request = buildRequests.poll();
         while (request != null) {
+            log.info("Handling request for a :" + request.getUnit());
             buildUtils.build(request.getUnit());
             request = buildRequests.poll();
         }
-    }
-
-
-    private boolean checkExpansion() {
-        return false;
+//        log.info("All requests handled, queue size :" + buildRequests.size());
     }
 
     private void queueConstruction(BuildRequest request) {
-        log.info("Queing request for a :" + request.getUnit());
+        log.info("Queuing request for a :" + request.getUnit());
         if (buildRequests.contains(request)) {
             log.warn("Already building :" + request);
         } else {
             buildRequests.add(request);
         }
-    }
-
-    private boolean checkBuild() { // TODO: Check if we have the build step items, rather than just doing them once.
-        if (currentBuild == null) {
-            log.warn("No build selected!");
-            return false;
-        }
-        if (currentBuildStep < currentBuild.getBuildSteps()) {
-            int nextStep = currentBuildStep + 1;
-            if (data.getWorkers().size() >= currentBuild.getBuildOrderEntry(nextStep).getWorkers()) {
-                currentBuildStep = nextStep;
-                return true;
-            }
-        }
-        return false;
     }
 
     private boolean needSupply() {
@@ -140,8 +96,6 @@ public class Production extends CeejBotComponent {
             return true;
         }
         return false;
-
-
     }
 
     @Override
@@ -157,5 +111,14 @@ public class Production extends CeejBotComponent {
             currentBuild = data.getBuild(newBuildName);
             currentBuildName = newBuildName;
         }
+    }
+
+    public int getCountOfPlannedProductionOfType(Units unit) {
+        int count = 0;
+        for (BuildRequest request : buildRequests) {
+            if (request.getUnit() == unit)
+                count += 1;
+        }
+        return count;
     }
 }

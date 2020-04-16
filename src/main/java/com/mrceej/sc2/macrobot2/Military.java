@@ -40,9 +40,9 @@ public class Military extends CeejBotComponent {
         Units type = (Units) unit.unit().getType();
         switch (type) {
             case ZERG_HATCHERY:
-                Base base = new Base(agent, utils, unit);
-                data.addBase(base);
+                data.addBase(new Base(agent, utils, unit));
             case ZERG_DRONE:
+                data.getNearestBase(unit).allocateWorker(unit);
         }
     }
 }

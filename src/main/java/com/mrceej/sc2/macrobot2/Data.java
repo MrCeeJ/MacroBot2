@@ -236,6 +236,14 @@ public class Data extends CeejBotComponent {
         }
     }
 
+    public Base getNearestBase(UnitInPool unit) {
+        if (bases.size() == 1) {
+            return (Base) bases.values().toArray()[0];
+        } else {
+            return bases.values().stream().min(getLinearDistanceComparatorForBase(unit.getUnit().get().getPosition().toPoint2d())).orElse(null);
+        }
+    }
+
     public UnitInPool getNearestWorker(Point2d location) {
         Base base = data.getNearestBaseWithWorkers(location);
         if (base != null) {
@@ -245,7 +253,7 @@ public class Data extends CeejBotComponent {
             if (drones.isEmpty())
                 return null;
             else
-                return getAllUnitsOfType(ZERG_DRONE).get(0);
+                return drones.get(0);
         }
     }
 
@@ -273,4 +281,8 @@ public class Data extends CeejBotComponent {
         };
     }
 
+    public List<UnitInPool> getAllUnitsInProductionOfType(Units unit) {
+        // Assuming this works for everything except queens
+        return getUnitsInProduction(unit);
+    }
 }
