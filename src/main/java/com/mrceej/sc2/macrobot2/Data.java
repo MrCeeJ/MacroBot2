@@ -151,19 +151,17 @@ public class Data extends CeejBotComponent {
         for (Tag tag : tags) {
             UnitInPool unitInPool = unitsInPool.get(tag);
             unit = unitInPool.unit();
-            if (unit.equals(null)) {
-                continue;
-            } else {
-                type = (Units) unitInPool.unit().getType();
-                switch (type) {
-                    case ZERG_DRONE:
-                    case ZERG_OVERLORD:
-                    case ZERG_ZERGLING:
-                    case ZERG_QUEEN:
-                        debugUnit(unit);
-                    default:
-                        debugUnit(unit);
-                }
+            type = (Units) unitInPool.unit().getType();
+            switch (type) {
+                case ZERG_DRONE:
+                case ZERG_OVERLORD:
+                case ZERG_ZERGLING:
+                case ZERG_QUEEN:
+                    debugUnit(unit);
+                    break;
+                default:
+                    debugUnit(unit);
+                    break;
             }
         }
     }
@@ -190,12 +188,14 @@ public class Data extends CeejBotComponent {
                     } else {
                         log.info("Target not in pool :" + unit.getTag());
                     }
-                } else {
-                    //log.info("No target for unit :" + unit.getTag());
                 }
-            } else {
-               // log.info("No orders for unit :" + unit.getTag());
+//                else {
+//                    log.info("No target for unit :" + unit.getTag());
+//                }
             }
+//            else {
+//                 log.info("No orders for unit :" + unit.getTag());
+//            }
         }
     }
 
@@ -236,11 +236,17 @@ public class Data extends CeejBotComponent {
         }
     }
 
-    public Base getNearestBase(UnitInPool unit) {
+    public Base getNearestBase(UnitInPool unitInPool) {
         if (bases.size() == 1) {
             return (Base) bases.values().toArray()[0];
         } else {
-            return bases.values().stream().min(getLinearDistanceComparatorForBase(unit.getUnit().get().getPosition().toPoint2d())).orElse(null);
+            Optional<Unit> unitOptional = unitInPool.getUnit();
+            if (unitOptional.isEmpty()) {
+                log.warn("Attempting to find nearest base for UnitInPool that does not exist: " + unitInPool);
+                return null;
+            }
+            Point2d pos = unitOptional.get().getPosition().toPoint2d();
+            return bases.values().stream().min(getLinearDistanceComparatorForBase(pos)).orElse(null);
         }
     }
 

@@ -41,8 +41,10 @@ public class Military extends CeejBotComponent {
         switch (type) {
             case ZERG_HATCHERY:
                 data.addBase(new Base(agent, utils, unit));
+                break;
             case ZERG_DRONE:
                 data.getNearestBase(unit).allocateWorker(unit);
+                break;
         }
     }
 }

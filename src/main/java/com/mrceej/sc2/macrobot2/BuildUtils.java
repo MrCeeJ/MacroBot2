@@ -246,10 +246,12 @@ public class BuildUtils extends CeejBotComponent {
     private boolean buildBuilding(UnitType unit, Point2d location) {
         UnitInPool worker = data.getNearestWorker(location);
         if (worker != null) {
-            agent.actions().unitCommand(worker.unit(), getAbilityToMakeUnit(unit), getRandomLocationNearLocationForStructure(unit, location), false);
+            Point2d loc = getRandomLocationNearLocationForStructure(unit, location);
+            agent.actions().unitCommand(worker.unit(), getAbilityToMakeUnit(unit), loc, false);
+            log.info("Worker :" + worker.getTag() + " ordered to build a :" + unit + " at location :" + loc);
             return true;
         }
-        log.warn("Warning, unable to build building :" + unit + " built by :"+worker + " at location :"+location);
+        log.warn("Warning, unable to build building :" + unit + " built by :" + worker + " at location :" + location);
         return false;
     }
 
@@ -259,7 +261,7 @@ public class BuildUtils extends CeejBotComponent {
 //            log.info("Already building a lair");
 //            return false;
 //        } else
-            if (hatch.getType() == ZERG_LAIR) {
+        if (hatch.getType() == ZERG_LAIR) {
             log.info("Already have a lair. :" + base.getBase().unit().getType());
             return true;
         } else if (hatch.getType() != ZERG_HATCHERY) {
@@ -314,6 +316,7 @@ public class BuildUtils extends CeejBotComponent {
 
     private boolean buildUnit(UnitType unit) {
         if (!checkCanMakeUnit((Units) unit, data.getMinerals(), data.getGas())) {
+            log.info("Failed to make a :" + unit);
             return false;
         }
 

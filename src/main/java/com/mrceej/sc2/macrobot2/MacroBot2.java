@@ -90,6 +90,7 @@ public class MacroBot2 extends CeejBot {
     public void onUnitCreated(UnitInPool unit) {
         data.onUnitCreated(unit);
         military.onUnitCreated(unit);
+        production.onUnitCreated(unit);
     }
 
     @Override

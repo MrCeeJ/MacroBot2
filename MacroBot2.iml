@@ -11,5 +11,14 @@
     <orderEntry type="library" name="com.github.ocraft:ocraft-s2client-api:0.3.13" level="project" />
     <orderEntry type="library" name="org.projectlombok:lombok:1.18.12" level="project" />
     <orderEntry type="library" name="com.github.ocraft:ocraft-s2client-bot:0.3.13" level="project" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/annotations/19.0.0/annotations-19.0.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
   </component>
 </module>
