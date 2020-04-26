@@ -47,4 +47,16 @@ public class Military extends CeejBotComponent {
                 break;
         }
     }
+
+    public void onBuildingConstructionComplete(UnitInPool unit) {
+        Units type = (Units) unit.unit().getType();
+        switch (type) {
+            case ZERG_HATCHERY:
+                data.addBase(new Base(agent, utils, unit));
+                break;
+            case ZERG_EXTRACTOR:
+                data.allocateExtractor(unit);
+                break;
+        }
+    }
 }

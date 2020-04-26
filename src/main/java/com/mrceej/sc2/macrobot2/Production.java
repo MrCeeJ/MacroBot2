@@ -64,17 +64,6 @@ public class Production extends CeejBotComponent {
         }
     }
 
-
-//    private void processBuildRequests() {
-//        BuildRequest request = buildRequests.poll();
-//        while (request != null) {
-//            log.info("Handling request for a :" + request.getUnit());
-//            buildUtils.build(request.getUnit());
-//            request = buildRequests.poll();
-//        }
-////        log.info("All requests handled, queue size :" + buildRequests.size());
-//    }
-
     private void queueConstruction(BuildRequest request) {
         log.info("Queuing request for a :" + request.getUnit());
         String queue = getQueueAsString();

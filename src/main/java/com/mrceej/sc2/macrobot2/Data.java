@@ -16,6 +16,7 @@ import com.mrceej.sc2.macrobot2.things.BuildOrder;
 import com.mrceej.sc2.macrobot2.things.GameAge;
 import com.mrceej.sc2.macrobot2.things.PoolFirstExpandBuildOrder;
 import lombok.Getter;
+import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
 
 import java.util.*;
@@ -23,6 +24,8 @@ import java.util.stream.Collectors;
 
 import static com.github.ocraft.s2client.protocol.data.Units.ZERG_DRONE;
 import static com.github.ocraft.s2client.protocol.data.Units.ZERG_EGG;
+
+import com.github.ocraft.s2client.protocol.debug.Color;
 
 @Slf4j
 public class Data extends CeejBotComponent {
@@ -43,6 +46,9 @@ public class Data extends CeejBotComponent {
     private Map<Tag, UnitInPool> unitsInPool = new HashMap<>();
     @Getter
     private Map<Tag, Base> bases = new HashMap<>();
+    @Setter
+    @Getter
+    private Base main;
 
     private Map<String, BuildOrder> builds;
 
@@ -118,7 +124,7 @@ public class Data extends CeejBotComponent {
         unitsInPool.put(unit.getTag(), unit);
         switch (type) {
             case ZERG_HATCHERY:
-//                checkForMain(unit);
+                checkForMain(unit);
                 break;
             case ZERG_DRONE:
 //                allocateDrone(unit, getNearestBase(unit));
@@ -127,8 +133,6 @@ public class Data extends CeejBotComponent {
 //                allocateQueen(unit);
                 break;
             case ZERG_EXTRACTOR:
-//                allocateExtractor(unit);
-                break;
             case ZERG_ZERGLING:
             case ZERG_ROACH:
             case ZERG_HYDRALISK:
@@ -144,6 +148,20 @@ public class Data extends CeejBotComponent {
 
     }
 
+    private void checkForMain(UnitInPool unit) {
+        if (unit.unit().getBuildProgress() == 1f) {
+            Base main = new Base(agent, utils, unit);
+            bases.put(unit.getTag(), main);
+            setMain(main);
+        }
+    }
+
+    void allocateExtractor(UnitInPool unit) {
+        Base base = getNearestBase(unit);
+        base.allocateExtractor(unit);
+        base.transferDronesToExtractor(unit);
+    }
+
     private void debugAllUnits() {
         Unit unit;
         Units type;
@@ -153,20 +171,26 @@ public class Data extends CeejBotComponent {
             unit = unitInPool.unit();
             type = (Units) unitInPool.unit().getType();
             switch (type) {
-                case ZERG_DRONE:
                 case ZERG_OVERLORD:
-                case ZERG_ZERGLING:
+                    debugUnit(unit, Color.GRAY);
+                    break;
+                case ZERG_DRONE:
+                    debugUnit(unit, Color.TEAL);
+                    break;
                 case ZERG_QUEEN:
-                    debugUnit(unit);
+                    debugUnit(unit, Color.GREEN);
+                    break;
+                case ZERG_ZERGLING:
+                    debugUnit(unit, Color.RED);
                     break;
                 default:
-                    debugUnit(unit);
+                    debugUnit(unit, Color.WHITE);
                     break;
             }
         }
     }
 
-    private void debugUnit(Unit unit) {
+    private void debugUnit(Unit unit, Color colour) {
         UnitOrder order;
         if (unit.isOnScreen()) {
             List<UnitOrder> orders = unit.getOrders();
@@ -193,9 +217,7 @@ public class Data extends CeejBotComponent {
 //                    log.info("No target for unit :" + unit.getTag());
 //                }
             }
-//            else {
-//                 log.info("No orders for unit :" + unit.getTag());
-//            }
+            debugger.debugUnitID(unit, colour);
         }
     }
 
@@ -249,6 +271,15 @@ public class Data extends CeejBotComponent {
             return bases.values().stream().min(getLinearDistanceComparatorForBase(pos)).orElse(null);
         }
     }
+
+    public Base getNearestBase(Point2d location) {
+        if (bases.size() == 1) {
+            return (Base) bases.values().toArray()[0];
+        } else {
+            return bases.values().stream().min(getLinearDistanceComparatorForBase(location)).orElse(null);
+        }
+    }
+
 
     public UnitInPool getNearestWorker(Point2d location) {
         Base base = data.getNearestBaseWithWorkers(location);

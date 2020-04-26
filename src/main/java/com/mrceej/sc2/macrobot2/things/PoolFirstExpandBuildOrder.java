@@ -16,9 +16,12 @@ public class PoolFirstExpandBuildOrder extends BuildOrder {
         super(agent);
         buildOrderEntries = new ArrayList<>();
         buildOrderEntries.add(new BuildOrderEntry(1, 14, ZERG_SPAWNING_POOL, 1));
-        buildOrderEntries.add(new BuildOrderEntry(2, 20, ZERG_ROACH_WARREN, 1));
-        buildOrderEntries.add(new BuildOrderEntry(3, 25, ZERG_EVOLUTION_CHAMBER, 2));
-        buildOrderEntries.add(new BuildOrderEntry(4, 30, ZERG_LAIR, 1));
+        buildOrderEntries.add(new BuildOrderEntry(2, 15, ZERG_EXTRACTOR, 1));
+        buildOrderEntries.add(new BuildOrderEntry(3, 16, ZERG_HATCHERY, 2));
+        buildOrderEntries.add(new BuildOrderEntry(4, 18, ZERG_EXTRACTOR, 2));
+        buildOrderEntries.add(new BuildOrderEntry(5, 20, ZERG_ROACH_WARREN, 1));
+        buildOrderEntries.add(new BuildOrderEntry(6, 25, ZERG_EVOLUTION_CHAMBER, 2));
+        buildOrderEntries.add(new BuildOrderEntry(7, 30, ZERG_LAIR, 1));
         buildSteps = buildOrderEntries.size();
     }
     @Override

@@ -10,6 +10,7 @@ import com.github.ocraft.s2client.protocol.unit.Unit;
 import com.mrceej.sc2.macrobot2.things.Base;
 import lombok.extern.slf4j.Slf4j;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 import java.util.stream.Collectors;
@@ -88,8 +89,10 @@ public class BuildUtils extends CeejBotComponent {
 
     private List<Units> getRequirements(Units unit) {
         switch (unit) {
+            case ZERG_HATCHERY:
+                return List.of();
             case ZERG_SPAWNING_POOL:
-                return List.of(ZERG_HATCHERY);
+                return List.of();
             case ZERG_EVOLUTION_CHAMBER:
                 return List.of(ZERG_HATCHERY);
             case ZERG_EXTRACTOR:
@@ -338,6 +341,13 @@ public class BuildUtils extends CeejBotComponent {
             case ZERG_EVOLUTION_CHAMBER:
             case ZERG_ROACH_WARREN:
                 return buildBuilding(unit, location);
+            case ZERG_QUEEN:
+                return buildQueen(data.getNearestBase(location));
+            case ZERG_EXTRACTOR:
+                return buildExtractor(data.getNearestBase(location));
+            case ZERG_LAIR:
+                return upgradeToLair(data.getNearestBase(location));
+            case ZERG_HIVE:
             default:
                 throw new UnsupportedOperationException("Sorry, don't know how to build " + unit);
         }

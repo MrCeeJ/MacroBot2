@@ -14,8 +14,11 @@ import com.mrceej.sc2.macrobot2.Utils;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.extern.log4j.Log4j2;
+
+import javax.swing.text.html.Option;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 import java.util.Random;
 
 @Log4j2
@@ -55,7 +58,7 @@ public class Base {
     }
 
     public void update() {
-        if (hasQueen() ) { //TODO: Check for multiple stacked injects
+        if (hasQueen()) { //TODO: Check for multiple stacked injects
             for (UnitInPool queen : queens) {
                 if (queen.unit().getEnergy().orElse(0f) >= 25f) {
                     agent.actions().unitCommand(queen.unit(), Abilities.EFFECT_INJECT_LARVA, this.base.unit(), false);
@@ -133,11 +136,15 @@ public class Base {
         List<UnitInPool> drones = this.mineralWorkers.subList(0, 3);
         for (UnitInPool drone : drones) {
             log.info("Re-assigning drone to gas :" + drone.getTag());
-            agent.actions().unitCommand(drone.unit(), Abilities.SMART, extractor.unit(), false);
+            Unit unit = drone.unit();
+            boolean carrying = unit.getBuffs().contains(Buffs.CARRY_MINERAL_FIELD_MINERALS);
+            if (carrying) {
+                agent.actions().unitCommand(unit, Abilities.HARVEST_RETURN, true);
+            }
+            agent.actions().unitCommand(drone.unit(), Abilities.SMART, extractor.unit(), true);
         }
         this.gasWorkers.addAll(drones);
         this.mineralWorkers.removeAll(drones);
-
     }
 
     public void allocateExtractor(UnitInPool extractor) {

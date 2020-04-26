@@ -62,7 +62,7 @@ public class MacroBot2 extends CeejBot {
 
 
         if (DEBUG_ENABLED) {
-            if (data.getCurrentStep() < 500) {
+            if (data.getCurrentStep() < 250) {
                 debugger.debugAlert("Hello Starcraft II bots! MacroBot2 here!");
             }
             data.debug();
@@ -95,8 +95,7 @@ public class MacroBot2 extends CeejBot {
 
     @Override
     public void onBuildingConstructionComplete(UnitInPool unit) {
-//        unitManager.onBuildingComplete(unit);
-//        buildManager.onUnitComplete(unit);
+        military.onBuildingConstructionComplete(unit);
     }
 
     @Override
