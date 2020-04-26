@@ -4,6 +4,7 @@ import com.github.ocraft.s2client.bot.gateway.UnitInPool;
 import com.github.ocraft.s2client.protocol.data.Abilities;
 import com.github.ocraft.s2client.protocol.data.Ability;
 import com.github.ocraft.s2client.protocol.debug.Color;
+import com.github.ocraft.s2client.protocol.spatial.Point;
 import com.github.ocraft.s2client.protocol.spatial.Point2d;
 import com.github.ocraft.s2client.protocol.unit.Unit;
 import com.github.ocraft.s2client.protocol.unit.UnitOrder;
@@ -24,6 +25,7 @@ class Debugger {
     private static Color BLUE = Color.BLUE;
     private static Color GREEN = Color.GREEN;
     private static Color WHITE = Color.WHITE;
+    private static Color TEAL = Color.TEAL;
 
 
     private MacroBot2 agent;
@@ -42,6 +44,8 @@ class Debugger {
         } else if (ability == Abilities.HARVEST_GATHER ||
                 ability == Abilities.HARVEST_RETURN) {
             return GREEN;
+        } else if (ability == Abilities.BUILD_EXTRACTOR) {
+            return TEAL;
         }
         log.error("Unknown ability colour :" + ability.toString());
         return WHITE;
@@ -89,5 +93,11 @@ class Debugger {
 
     public void debugBase(Base b) {
 
+    }
+
+    public void debugUnitID(Unit unit, Color colour) {
+        String tag = unit.getTag().toString();
+        String id = tag.substring(tag.length()-5, tag.length()-1);
+        agent.debug().debugTextOut(id, unit.getPosition(), colour, SIZE_NORMAL);
     }
 }
